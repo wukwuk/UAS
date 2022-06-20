@@ -89,8 +89,8 @@ def menu():
     print('1.Tambah Data')
     print('2.Ubah Data')
     print('3.Hapus Data')
-    print('0.Keluar')
-    menu = input('Pilih Menu(1/2/3/0): ')
+    print('Ketik exit jika ingin keluar')
+    menu = input('Pilih Menu(1/2/3/exit): ')
 
     if menu == '1':
         tambah()
@@ -98,7 +98,7 @@ def menu():
         ubah()
     if menu == '3':
         hapus()
-    elif menu == '0':
+    elif menu == 'exit':
         os.system('cls')
         quit()
 
