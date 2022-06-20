@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 12, 2020 at 12:29 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.9
+-- Generation Time: Jun 20, 2022 at 05:15 PM
+-- Server version: 10.4.8-MariaDB
+-- PHP Version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -41,10 +42,9 @@ CREATE TABLE `data` (
 --
 
 INSERT INTO `data` (`id`, `nama`, `nim`, `prodi`, `j_kel`, `alamat`) VALUES
-(1, 'Tuan Krab', 99999999, 'S3 Keuangan', 'Laki-laki', 'Krusty Krab'),
-(6, 'Maman Racing', 69691212, 'S3 Seni Musik', 'Laki-laki', 'Planet Namek'),
-(8, 'Uchiha Roy', 12122020, 'S4 Youtuber', 'Laki-laki', 'Gebang Gakure'),
-(9, 'Ariel Noah', 20200912, 'S4 Seni Musik', 'Laki-laki', 'Bandung');
+(1, 'dewa', 12345678, 'ti', 'Laki-laki', 'sesetan'),
+(2, 'jasmine', 12344444, 'akuntan', 'Perempuan', 'pemecutan'),
+(3, 'grace', 66666666, 'teknik pangan', 'Laki-laki', 'surabaya');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +64,7 @@ ALTER TABLE `data`
 -- AUTO_INCREMENT for table `data`
 --
 ALTER TABLE `data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
