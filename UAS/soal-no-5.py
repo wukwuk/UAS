@@ -14,7 +14,7 @@ def tambah():
     cursor = db.cursor()
     os.system('cls')
     nama = input('Masukkan Nama: ')
-    nim = input('Masukkan Nim (6 digit tanpa titik): ')
+    nim = input('Masukkan Nim (8 digit tanpa titik): ')
     if len(nim) != 8:
         print('nim salah')
         tambah()
@@ -42,7 +42,7 @@ def ubah():
     update = input('Pilih data mahasiswa yang akan diubah (berdasarkan id): ')
     os.system('cls')
     nama = input('Masukkan Nama baru: ')
-    nim = input('Masukkan Nim baru (6 digit tanpa titik): ')
+    nim = input('Masukkan Nim baru (8 digit tanpa titik): ')
     if len(nim) != 8:
         print('nim salah')
         tambah()
