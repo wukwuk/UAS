@@ -72,7 +72,7 @@ def hapus():
     cursor.execute(sql)
     db.commit()
     print('Data berhasil dihapus')
-
+    menu()
 
 def menu():
     cursor = db.cursor()
